@@ -13,7 +13,7 @@ void main(List<String> args) {
   var person = stdin.readLineSync();
 
   /* Judgment */
-  stdout.writeln("What do you put on the tostiesquites?");
+  stdout.writeln('What do you put on the tostiesquites, $person?');
 
   stdout.writeln("Do you put mayonnaise on the tostiesquites?");
   // ignore: unused_local_variable
@@ -23,6 +23,9 @@ void main(List<String> args) {
   var creampresence = stdin.readLineSync();
 
   if (creampresence == 'yes') {
+    gaypresence = true;
+  }
+  if (creampresence == 'Yes') {
     gaypresence = true;
   }
 
