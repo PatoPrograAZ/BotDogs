@@ -3,7 +3,7 @@
 /// Code made for detecting if you are gay in base what you put in your tostiesquites
 import "dart:io";
 
-void main(List<String> args) {
+void main() {
   /* Variable initialization */
   bool gaypresence = false;
 
