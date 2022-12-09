@@ -9,8 +9,9 @@ void main() {
 
   /* Identification */
   /// Need to read the request
-  stdout.writeln("Type your name: ");
+  stdout.write("Type your name: ");
   var person = stdin.readLineSync();
+  stdout.writeln('');
 
   /* Judgment */
   stdout.writeln('What do you put on the tostiesquites, $person?');
@@ -18,9 +19,11 @@ void main() {
   stdout.writeln("Do you put mayonnaise on the tostiesquites?");
   // ignore: unused_local_variable
   var mayonnaisepresence = stdin.readLineSync();
+  stdout.writeln('');
 
   stdout.writeln("Do you put cream on the tostiesquites?");
   var creampresence = stdin.readLineSync();
+  stdout.writeln('');
 
   if (creampresence == 'yes') {
     gaypresence = true;
