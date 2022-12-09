@@ -12,6 +12,7 @@ void main(List<String> args) {
   String gayperson;
 
   /* Identification */
+  /// Need to read the request
   stdout.writeln("Type your name: ");
   String person = "Pato";
 
@@ -19,15 +20,17 @@ void main(List<String> args) {
   stdout.writeln("What do you put on the tostiesquites?");
 
   stdout.writeln("Do you put mayonnaise on the tostiesquites?");
+
+  /// Need to read the request
   mayonnaisepresence = true;
 
   stdout.writeln("Do you put cream on the tostiesquites?");
+
+  /// Need to read the request
   creampresence = true;
 
   if (creampresence) {
     gaypresence = true;
-  } else {
-    gaypresence = false;
   }
 
   /* Detection of Gay Presence */
