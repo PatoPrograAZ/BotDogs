@@ -6,43 +6,36 @@ import "dart:io";
 void main(List<String> args) {
   /* Variable initialization */
   bool gaypresence = false;
-  // ignore: unused_local_variable
-  bool mayonnaisepresence = false;
-  bool creampresence = false;
-  String gayperson;
 
   /* Identification */
   /// Need to read the request
   stdout.writeln("Type your name: ");
-  String person = "Pato";
+  String? person = stdin.readLineSync();
 
   /* Judgment */
   stdout.writeln("What do you put on the tostiesquites?");
 
   stdout.writeln("Do you put mayonnaise on the tostiesquites?");
-
-  /// Need to read the request
-  mayonnaisepresence = true;
+  // ignore: unused_local_variable
+  String? mayonnaisepresence = stdin.readLineSync();
 
   stdout.writeln("Do you put cream on the tostiesquites?");
+  String? creampresence = stdin.readLineSync();
 
-  /// Need to read the request
-  creampresence = true;
-
-  if (creampresence) {
+  if (creampresence == 'yes') {
     gaypresence = true;
   }
 
   /* Detection of Gay Presence */
   if (gaypresence) {
     /* Assignment of Gay Presence */
-    gayperson = person;
-    print('$gayperson is gay');
+    print('$person is gay');
   } else {
     print('$person is not gay');
   }
 
+  /* Restauring old values */
   gaypresence = false;
-  creampresence = false;
-  mayonnaisepresence = false;
+  creampresence = 'no';
+  mayonnaisepresence = 'no';
 }
