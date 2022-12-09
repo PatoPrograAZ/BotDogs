@@ -10,17 +10,17 @@ void main(List<String> args) {
   /* Identification */
   /// Need to read the request
   stdout.writeln("Type your name: ");
-  String? person = stdin.readLineSync();
+  var person = stdin.readLineSync();
 
   /* Judgment */
   stdout.writeln("What do you put on the tostiesquites?");
 
   stdout.writeln("Do you put mayonnaise on the tostiesquites?");
   // ignore: unused_local_variable
-  String? mayonnaisepresence = stdin.readLineSync();
+  var mayonnaisepresence = stdin.readLineSync();
 
   stdout.writeln("Do you put cream on the tostiesquites?");
-  String? creampresence = stdin.readLineSync();
+  var creampresence = stdin.readLineSync();
 
   if (creampresence == 'yes') {
     gaypresence = true;
