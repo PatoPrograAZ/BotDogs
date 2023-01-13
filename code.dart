@@ -25,6 +25,7 @@ void main() {
   var creampresence = stdin.readLineSync();
   stdout.writeln('');
 
+  /* Detection of Gay Presence */
   if (creampresence == 'yes') {
     gaypresence = true;
   }
@@ -32,9 +33,8 @@ void main() {
     gaypresence = true;
   }
 
-  /* Detection of Gay Presence */
+  /* Assignment by Gay Presence */
   if (gaypresence) {
-    /* Assignment of Gay Presence */
     print('$person is gay');
   } else {
     print('$person is not gay');
